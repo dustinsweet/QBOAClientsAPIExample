@@ -134,6 +134,7 @@ namespace Intuit.ClientsApiExample
             // Oops, we misspelled Tony's last name - let's fix it
             client.DisplayName = "Tony Stark";
             client.LastName = "Stark";
+            client.OrganizationName = "The Avengers";
 
             var updatedClient = await _apiClient.UpdateOrganizationalClient(client).ConfigureAwait(false);
 
